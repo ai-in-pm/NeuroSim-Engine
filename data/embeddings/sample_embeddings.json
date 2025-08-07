@@ -1,0 +1,225 @@
+{
+  "description": "Sample multi-modal embeddings for NeuroSim Engine testing",
+  "embedding_types": {
+    "visual": {
+      "dimension": 512,
+      "description": "CLIP-like visual embeddings",
+      "normalization": "L2"
+    },
+    "auditory": {
+      "dimension": 256,
+      "description": "Audio spectral and prosodic features",
+      "normalization": "L2"
+    },
+    "vestibular": {
+      "dimension": 128,
+      "description": "Motion and balance features",
+      "normalization": "MinMax"
+    },
+    "interoceptive": {
+      "dimension": 64,
+      "description": "Internal body state features",
+      "normalization": "StandardScaler"
+    }
+  },
+  "sample_scenarios": [
+    {
+      "scenario_id": "calm_environment",
+      "description": "Calm, non-threatening environment",
+      "embeddings": {
+        "visual": {
+          "features": [0.1, 0.05, -0.02, 0.08, 0.0, 0.03, -0.01, 0.04, 0.02, 0.0],
+          "detected_objects": ["person", "chair", "table", "window"],
+          "scene_category": "indoor_calm",
+          "threat_level": 0.1,
+          "complexity": 0.3
+        },
+        "auditory": {
+          "features": [0.2, 0.1, 0.05, 0.0, -0.02, 0.08, 0.03, 0.01, 0.0, 0.04],
+          "volume_level": 0.3,
+          "pitch_average": 200.0,
+          "emotional_tone": "neutral",
+          "speech_detected": false,
+          "threat_sounds": []
+        },
+        "vestibular": {
+          "features": [0.0, 0.01, 0.0, -0.02, 0.0, 0.0, 0.01, 0.0, 0.0, 0.0],
+          "motion_type": "stationary",
+          "balance_stability": 0.95,
+          "motion_magnitude": 0.05
+        },
+        "interoceptive": {
+          "features": [0.3, 0.2, 0.1, 0.4, 0.25, 0.15, 0.35, 0.2, 0.3, 0.25],
+          "heart_rate": 70,
+          "breathing_rate": 16,
+          "stress_level": 0.2,
+          "arousal": 0.3
+        }
+      }
+    },
+    {
+      "scenario_id": "crowded_noisy_environment",
+      "description": "Overwhelming sensory environment (autism trigger)",
+      "embeddings": {
+        "visual": {
+          "features": [0.8, 0.7, 0.6, 0.9, 0.75, 0.65, 0.8, 0.7, 0.85, 0.6],
+          "detected_objects": ["person", "person", "person", "crowd", "movement", "lights"],
+          "scene_category": "crowded_indoor",
+          "threat_level": 0.3,
+          "complexity": 0.9,
+          "autism_triggers": ["high_complexity", "multiple_faces", "movement"]
+        },
+        "auditory": {
+          "features": [0.9, 0.8, 0.7, 0.85, 0.75, 0.9, 0.8, 0.7, 0.85, 0.9],
+          "volume_level": 0.8,
+          "pitch_average": 300.0,
+          "emotional_tone": "mixed",
+          "speech_detected": true,
+          "background_noise": 0.7,
+          "autism_triggers": ["high_volume", "multiple_voices", "background_noise"]
+        },
+        "vestibular": {
+          "features": [0.1, 0.05, 0.08, 0.02, 0.06, 0.04, 0.07, 0.03, 0.05, 0.02],
+          "motion_type": "slight_movement",
+          "balance_stability": 0.8,
+          "motion_magnitude": 0.15
+        },
+        "interoceptive": {
+          "features": [0.7, 0.8, 0.6, 0.9, 0.75, 0.65, 0.8, 0.7, 0.85, 0.6],
+          "heart_rate": 95,
+          "breathing_rate": 22,
+          "stress_level": 0.8,
+          "arousal": 0.7,
+          "autism_indicators": ["sensory_overload", "increased_arousal"]
+        }
+      }
+    },
+    {
+      "scenario_id": "combat_flashback_trigger",
+      "description": "Combat-related PTSD trigger scenario",
+      "embeddings": {
+        "visual": {
+          "features": [0.6, 0.8, 0.7, 0.9, 0.5, 0.85, 0.75, 0.6, 0.9, 0.8],
+          "detected_objects": ["smoke", "debris", "movement", "unknown_figure"],
+          "scene_category": "urban_damaged",
+          "threat_level": 0.9,
+          "complexity": 0.7,
+          "ptsd_triggers": ["smoke", "debris", "urban_damage", "unknown_figure"]
+        },
+        "auditory": {
+          "features": [0.95, 0.9, 0.85, 0.98, 0.8, 0.92, 0.88, 0.9, 0.95, 0.85],
+          "volume_level": 0.95,
+          "pitch_average": 150.0,
+          "emotional_tone": "threatening",
+          "speech_detected": false,
+          "threat_sounds": ["explosion", "gunfire", "helicopter"],
+          "ptsd_triggers": ["explosion_sound", "combat_audio", "helicopter_rotor"]
+        },
+        "vestibular": {
+          "features": [0.3, 0.4, 0.2, 0.5, 0.35, 0.25, 0.4, 0.3, 0.45, 0.2],
+          "motion_type": "sudden_movement",
+          "balance_stability": 0.6,
+          "motion_magnitude": 0.4,
+          "startle_response": true
+        },
+        "interoceptive": {
+          "features": [0.9, 0.95, 0.8, 0.98, 0.85, 0.9, 0.92, 0.88, 0.95, 0.8],
+          "heart_rate": 130,
+          "breathing_rate": 28,
+          "stress_level": 0.95,
+          "arousal": 0.9,
+          "ptsd_indicators": ["hyperarousal", "panic_response", "fight_flight"]
+        }
+      }
+    },
+    {
+      "scenario_id": "social_interaction_autism",
+      "description": "Social interaction challenging for autism",
+      "embeddings": {
+        "visual": {
+          "features": [0.5, 0.6, 0.4, 0.7, 0.45, 0.55, 0.6, 0.5, 0.65, 0.4],
+          "detected_objects": ["face", "eyes", "facial_expression", "gesture"],
+          "scene_category": "social_interaction",
+          "threat_level": 0.4,
+          "complexity": 0.6,
+          "autism_challenges": ["eye_contact", "facial_expression_reading", "social_cues"]
+        },
+        "auditory": {
+          "features": [0.6, 0.5, 0.7, 0.4, 0.65, 0.55, 0.6, 0.5, 0.7, 0.45],
+          "volume_level": 0.5,
+          "pitch_average": 250.0,
+          "emotional_tone": "social",
+          "speech_detected": true,
+          "prosody_complexity": 0.7,
+          "autism_challenges": ["prosody_interpretation", "social_speech"]
+        },
+        "vestibular": {
+          "features": [0.02, 0.01, 0.03, 0.0, 0.02, 0.01, 0.02, 0.0, 0.01, 0.02],
+          "motion_type": "minimal",
+          "balance_stability": 0.9,
+          "motion_magnitude": 0.05
+        },
+        "interoceptive": {
+          "features": [0.6, 0.5, 0.7, 0.55, 0.65, 0.5, 0.6, 0.55, 0.7, 0.5],
+          "heart_rate": 85,
+          "breathing_rate": 18,
+          "stress_level": 0.6,
+          "arousal": 0.5,
+          "autism_indicators": ["social_anxiety", "interoceptive_confusion"]
+        }
+      }
+    },
+    {
+      "scenario_id": "recovery_environment",
+      "description": "Therapeutic/recovery environment",
+      "embeddings": {
+        "visual": {
+          "features": [0.2, 0.15, 0.1, 0.25, 0.18, 0.12, 0.2, 0.15, 0.22, 0.1],
+          "detected_objects": ["soft_lighting", "comfortable_chair", "plants", "books"],
+          "scene_category": "therapeutic_space",
+          "threat_level": 0.05,
+          "complexity": 0.2,
+          "therapeutic_elements": ["soft_lighting", "natural_elements", "organized_space"]
+        },
+        "auditory": {
+          "features": [0.15, 0.1, 0.2, 0.08, 0.18, 0.12, 0.15, 0.1, 0.2, 0.08],
+          "volume_level": 0.2,
+          "pitch_average": 180.0,
+          "emotional_tone": "calming",
+          "speech_detected": false,
+          "ambient_sounds": ["soft_music", "nature_sounds"],
+          "therapeutic_audio": true
+        },
+        "vestibular": {
+          "features": [0.0, 0.01, 0.0, 0.0, 0.01, 0.0, 0.0, 0.01, 0.0, 0.0],
+          "motion_type": "stationary",
+          "balance_stability": 0.98,
+          "motion_magnitude": 0.02
+        },
+        "interoceptive": {
+          "features": [0.25, 0.2, 0.15, 0.3, 0.22, 0.18, 0.25, 0.2, 0.28, 0.15],
+          "heart_rate": 65,
+          "breathing_rate": 14,
+          "stress_level": 0.15,
+          "arousal": 0.25,
+          "therapeutic_indicators": ["relaxation", "parasympathetic_activation"]
+        }
+      }
+    }
+  ],
+  "embedding_generation_notes": {
+    "visual_features": "Simplified representation of CLIP-like embeddings focusing on object detection, scene understanding, and threat assessment",
+    "auditory_features": "Spectral and prosodic features including volume, pitch, emotional tone, and speech characteristics",
+    "vestibular_features": "Motion and balance features including acceleration, orientation, and stability measures",
+    "interoceptive_features": "Internal body state features including cardiovascular, respiratory, and autonomic measures",
+    "autism_considerations": "Enhanced sensitivity to sensory complexity, social cues, and pattern processing",
+    "ptsd_considerations": "Hypervigilance to threat-related stimuli, trauma-associated triggers, and arousal responses"
+  },
+  "metadata": {
+    "created_date": "2025-01-08",
+    "version": "1.0",
+    "author": "NeuroSim Engine",
+    "purpose": "Sample embeddings for testing multi-modal fusion and neural simulation",
+    "notes": "These embeddings are simplified representations for testing purposes. In a production system, they would be generated by actual sensory processing algorithms."
+  }
+}

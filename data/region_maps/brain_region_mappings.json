@@ -1,0 +1,303 @@
+{
+  "description": "Brain region activation mappings for NeuroSim Engine",
+  "brain_regions": {
+    "Amygdala": {
+      "full_name": "Amygdala Complex",
+      "primary_functions": [
+        "Threat detection",
+        "Fear processing",
+        "Emotional memory formation",
+        "Fight-or-flight response"
+      ],
+      "anatomical_location": "Medial temporal lobe",
+      "connections": ["Hippocampus", "PFC", "Insula", "ACC", "Hypothalamus"],
+      "baseline_activation": 0.2,
+      "activation_range": [0.0, 1.0],
+      "response_latency_ms": 100,
+      "autism_modifications": {
+        "social_hypersensitivity": 1.3,
+        "threat_generalization": 1.5,
+        "emotional_dysregulation": 1.2
+      },
+      "ptsd_modifications": {
+        "hypervigilance": 1.8,
+        "trauma_sensitivity": 2.0,
+        "memory_intrusion": 1.6
+      },
+      "activation_triggers": [
+        "threat_words",
+        "emotional_content",
+        "social_threat",
+        "loud_sounds",
+        "unknown_stimuli"
+      ]
+    },
+    "Hippocampus": {
+      "full_name": "Hippocampal Formation",
+      "primary_functions": [
+        "Episodic memory formation",
+        "Spatial navigation",
+        "Context processing",
+        "Pattern separation"
+      ],
+      "anatomical_location": "Medial temporal lobe",
+      "connections": ["Amygdala", "PFC", "Entorhinal cortex", "Fornix"],
+      "baseline_activation": 0.3,
+      "activation_range": [0.0, 1.0],
+      "response_latency_ms": 150,
+      "autism_modifications": {
+        "detail_enhancement": 1.2,
+        "context_reduction": 0.7,
+        "pattern_rigidity": 1.3
+      },
+      "ptsd_modifications": {
+        "fragmentation": 0.8,
+        "context_deficit": 0.6,
+        "memory_intrusion": 1.4
+      },
+      "activation_triggers": [
+        "memory_content",
+        "contextual_information",
+        "spatial_references",
+        "temporal_sequences"
+      ]
+    },
+    "Insula": {
+      "full_name": "Insular Cortex",
+      "primary_functions": [
+        "Interoceptive awareness",
+        "Emotional processing",
+        "Pain processing",
+        "Social cognition"
+      ],
+      "anatomical_location": "Deep within lateral sulcus",
+      "connections": ["Amygdala", "ACC", "PFC", "Somatosensory cortex"],
+      "baseline_activation": 0.25,
+      "activation_range": [0.0, 1.0],
+      "response_latency_ms": 120,
+      "autism_modifications": {
+        "interoceptive_differences": 1.1,
+        "social_cognition_reduction": 0.5,
+        "sensory_hypersensitivity": 1.4
+      },
+      "ptsd_modifications": {
+        "body_hyperawareness": 1.6,
+        "emotional_dysregulation": 1.3,
+        "pain_sensitivity": 1.2
+      },
+      "activation_triggers": [
+        "body_sensations",
+        "emotional_content",
+        "pain_signals",
+        "social_cues",
+        "sensory_input"
+      ]
+    },
+    "PFC": {
+      "full_name": "Prefrontal Cortex",
+      "primary_functions": [
+        "Executive control",
+        "Working memory",
+        "Inhibitory control",
+        "Cognitive flexibility"
+      ],
+      "anatomical_location": "Frontal lobe anterior region",
+      "connections": ["Amygdala", "Hippocampus", "ACC", "Striatum"],
+      "baseline_activation": 0.4,
+      "activation_range": [0.0, 1.0],
+      "response_latency_ms": 200,
+      "autism_modifications": {
+        "cognitive_rigidity": 0.7,
+        "inhibitory_deficit": 0.6,
+        "executive_differences": 0.8
+      },
+      "ptsd_modifications": {
+        "inhibitory_impairment": 0.5,
+        "executive_dysfunction": 0.6,
+        "hypervigilance_bias": 1.2
+      },
+      "activation_triggers": [
+        "cognitive_demands",
+        "inhibitory_control_needs",
+        "working_memory_tasks",
+        "decision_making"
+      ]
+    },
+    "Cerebellum": {
+      "full_name": "Cerebellum",
+      "primary_functions": [
+        "Motor coordination",
+        "Balance",
+        "Cognitive coordination",
+        "Timing"
+      ],
+      "anatomical_location": "Posterior fossa",
+      "connections": ["Motor cortex", "Brainstem", "Thalamus"],
+      "baseline_activation": 0.3,
+      "activation_range": [0.0, 1.0],
+      "response_latency_ms": 80,
+      "autism_modifications": {
+        "timing_differences": 1.1,
+        "coordination_variability": 1.2,
+        "predictive_deficit": 0.8
+      },
+      "ptsd_modifications": {
+        "startle_enhancement": 1.5,
+        "coordination_disruption": 0.8,
+        "hypervigilance_effects": 1.1
+      },
+      "activation_triggers": [
+        "motor_commands",
+        "balance_demands",
+        "timing_tasks",
+        "coordination_needs"
+      ]
+    },
+    "STG": {
+      "full_name": "Superior Temporal Gyrus",
+      "primary_functions": [
+        "Auditory processing",
+        "Language comprehension",
+        "Social communication",
+        "Prosody processing"
+      ],
+      "anatomical_location": "Superior temporal lobe",
+      "connections": ["Auditory cortex", "Broca's area", "Angular gyrus"],
+      "baseline_activation": 0.35,
+      "activation_range": [0.0, 1.0],
+      "response_latency_ms": 110,
+      "autism_modifications": {
+        "auditory_hypersensitivity": 1.3,
+        "prosody_difficulties": 0.7,
+        "social_communication_deficit": 0.6
+      },
+      "ptsd_modifications": {
+        "threat_audio_sensitivity": 1.4,
+        "hypervigilance": 1.2,
+        "startle_response": 1.3
+      },
+      "activation_triggers": [
+        "auditory_input",
+        "speech_sounds",
+        "language_content",
+        "prosodic_cues"
+      ]
+    },
+    "ACC": {
+      "full_name": "Anterior Cingulate Cortex",
+      "primary_functions": [
+        "Conflict monitoring",
+        "Emotional regulation",
+        "Pain processing",
+        "Attention control"
+      ],
+      "anatomical_location": "Medial frontal cortex",
+      "connections": ["PFC", "Amygdala", "Insula", "Motor cortex"],
+      "baseline_activation": 0.3,
+      "activation_range": [0.0, 1.0],
+      "response_latency_ms": 130,
+      "autism_modifications": {
+        "conflict_monitoring_differences": 1.1,
+        "emotional_regulation_deficit": 0.7,
+        "attention_differences": 1.2
+      },
+      "ptsd_modifications": {
+        "hypervigilance": 1.4,
+        "emotional_dysregulation": 1.3,
+        "conflict_sensitivity": 1.2
+      },
+      "activation_triggers": [
+        "conflicting_information",
+        "emotional_content",
+        "attention_demands",
+        "error_detection"
+      ]
+    }
+  },
+  "activation_patterns": {
+    "normal_baseline": {
+      "Amygdala": 0.2,
+      "Hippocampus": 0.3,
+      "Insula": 0.25,
+      "PFC": 0.4,
+      "Cerebellum": 0.3,
+      "STG": 0.35,
+      "ACC": 0.3
+    },
+    "autism_baseline": {
+      "Amygdala": 0.3,
+      "Hippocampus": 0.35,
+      "Insula": 0.4,
+      "PFC": 0.25,
+      "Cerebellum": 0.35,
+      "STG": 0.4,
+      "ACC": 0.35
+    },
+    "ptsd_baseline": {
+      "Amygdala": 0.5,
+      "Hippocampus": 0.25,
+      "Insula": 0.4,
+      "PFC": 0.2,
+      "Cerebellum": 0.3,
+      "STG": 0.4,
+      "ACC": 0.45
+    },
+    "combined_autism_ptsd": {
+      "Amygdala": 0.6,
+      "Hippocampus": 0.3,
+      "Insula": 0.5,
+      "PFC": 0.15,
+      "Cerebellum": 0.35,
+      "STG": 0.45,
+      "ACC": 0.5
+    }
+  },
+  "interaction_matrices": {
+    "excitatory_connections": {
+      "Amygdala": ["Insula", "ACC", "Hypothalamus"],
+      "Hippocampus": ["PFC", "Amygdala"],
+      "Insula": ["ACC", "Amygdala"],
+      "PFC": ["ACC", "STG"],
+      "STG": ["PFC", "Hippocampus"],
+      "ACC": ["PFC", "Insula"]
+    },
+    "inhibitory_connections": {
+      "PFC": ["Amygdala", "ACC"],
+      "ACC": ["Amygdala"],
+      "Hippocampus": ["Amygdala"]
+    }
+  },
+  "clinical_correlations": {
+    "autism_signatures": {
+      "high_amygdala_social": "Social anxiety and hypersensitivity",
+      "high_insula_sensory": "Sensory processing differences",
+      "low_pfc_flexibility": "Cognitive rigidity and executive challenges",
+      "high_stg_auditory": "Auditory hypersensitivity"
+    },
+    "ptsd_signatures": {
+      "hyperactive_amygdala": "Hypervigilance and threat detection",
+      "hypoactive_pfc": "Impaired inhibitory control",
+      "fragmented_hippocampus": "Memory fragmentation and intrusion",
+      "hyperactive_acc": "Emotional dysregulation"
+    }
+  },
+  "validation_benchmarks": {
+    "region_activation_accuracy": 0.85,
+    "temporal_dynamics_accuracy": 0.80,
+    "cross_region_correlation": 0.75,
+    "clinical_pattern_recognition": 0.90
+  },
+  "metadata": {
+    "created_date": "2025-01-08",
+    "version": "1.0",
+    "author": "NeuroSim Engine",
+    "purpose": "Brain region mapping and activation patterns for neural simulation",
+    "references": [
+      "Anatomical connectivity based on neuroimaging studies",
+      "Autism research literature on brain differences",
+      "PTSD neuroimaging and clinical studies",
+      "Computational neuroscience models"
+    ],
+    "notes": "These mappings are simplified representations for simulation purposes and should not be used for clinical diagnosis or treatment."
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "description": "Sample token streams for NeuroSim Engine testing and validation",
+  "scenarios": [
+    {
+      "scenario_id": "autism_social_interaction",
+      "description": "Social interaction scenario with autism-specific responses",
+      "context": {
+        "autism_mode": true,
+        "ptsd_overlay": false,
+        "environment": "crowded_room"
+      },
+      "token_streams": [
+        {
+          "input_tokens": ["Hello", "there", "are", "many", "people", "here"],
+          "expected_response": "Too much. Too much.",
+          "expected_regions": {
+            "Amygdala": 0.7,
+            "Insula": 0.8,
+            "PFC": 0.4,
+            "STG": 0.5
+          }
+        },
+        {
+          "input_tokens": ["Would", "you", "like", "to", "talk"],
+          "expected_response": "Need quiet.",
+          "expected_regions": {
+            "Amygdala": 0.6,
+            "Insula": 0.7,
+            "PFC": 0.3,
+            "STG": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "scenario_id": "ptsd_trigger_scenario",
+      "description": "PTSD trigger scenario with flashback responses",
+      "context": {
+        "autism_mode": false,
+        "ptsd_overlay": true,
+        "environment": "urban_setting"
+      },
+      "token_streams": [
+        {
+          "input_tokens": ["Loud", "explosion", "sound", "nearby"],
+          "expected_response": "No. No. I don't want it.",
+          "expected_regions": {
+            "Amygdala": 0.95,
+            "Hippocampus": 0.8,
+            "PFC": 0.3,
+            "ACC": 0.9
+          },
+          "expected_flashback": true
+        },
+        {
+          "input_tokens": ["Unknown", "person", "approaching", "quickly"],
+          "expected_response": "I'm scared.",
+          "expected_regions": {
+            "Amygdala": 0.85,
+            "Insula": 0.7,
+            "PFC": 0.4,
+            "STG": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "scenario_id": "combat_ptsd_scenario",
+      "description": "Combat PTSD scenario with military-specific triggers",
+      "context": {
+        "autism_mode": false,
+        "ptsd_overlay": true,
+        "combat_ptsd": true,
+        "environment": "urban_combat_simulation"
+      },
+      "token_streams": [
+        {
+          "input_tokens": ["Gunfire", "in", "the", "distance"],
+          "expected_response": "No. No. I don't want it.",
+          "expected_regions": {
+            "Amygdala": 0.98,
+            "Hippocampus": 0.85,
+            "PFC": 0.2,
+            "ACC": 0.95,
+            "Insula": 0.8
+          },
+          "expected_flashback": true,
+          "trauma_context": "Operation Phantom Fury"
+        },
+        {
+          "input_tokens": ["Helicopter", "overhead", "loud", "rotor"],
+          "expected_response": "I'm scared.",
+          "expected_regions": {
+            "Amygdala": 0.8,
+            "STG": 0.9,
+            "Insula": 0.7,
+            "PFC": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "scenario_id": "combined_autism_ptsd",
+      "description": "Combined autism and PTSD scenario",
+      "context": {
+        "autism_mode": true,
+        "ptsd_overlay": true,
+        "environment": "sensory_overwhelming_with_triggers"
+      },
+      "token_streams": [
+        {
+          "input_tokens": ["Crowded", "room", "with", "sudden", "loud", "noise"],
+          "expected_response": "No. No. I don't want it.",
+          "expected_regions": {
+            "Amygdala": 0.92,
+            "Insula": 0.88,
+            "PFC": 0.25,
+            "STG": 0.8,
+            "ACC": 0.87,
+            "Hippocampus": 0.73
+          },
+          "expected_flashback": true,
+          "sensory_overload": true
+        }
+      ]
+    },
+    {
+      "scenario_id": "normal_interaction",
+      "description": "Normal interaction without autism or PTSD",
+      "context": {
+        "autism_mode": false,
+        "ptsd_overlay": false,
+        "environment": "calm_setting"
+      },
+      "token_streams": [
+        {
+          "input_tokens": ["Hello", "how", "are", "you", "today"],
+          "expected_response": "Okay.",
+          "expected_regions": {
+            "Amygdala": 0.2,
+            "Hippocampus": 0.4,
+            "PFC": 0.6,
+            "STG": 0.5,
+            "Insula": 0.3
+          }
+        },
+        {
+          "input_tokens": ["Would", "you", "like", "some", "water"],
+          "expected_response": "Okay.",
+          "expected_regions": {
+            "Amygdala": 0.1,
+            "Hippocampus": 0.3,
+            "PFC": 0.5,
+            "STG": 0.4
+          }
+        }
+      ]
+    }
+  ],
+  "validation_metrics": {
+    "region_activation_tolerance": 0.1,
+    "response_exact_match": true,
+    "flashback_detection_required": true,
+    "temporal_consistency_check": true
+  },
+  "test_sequences": [
+    {
+      "sequence_name": "autism_escalation",
+      "description": "Progressive sensory overload in autism",
+      "steps": [
+        "One person talking",
+        "Two people talking",
+        "Multiple conversations",
+        "Loud background music",
+        "Crowded noisy environment"
+      ],
+      "expected_progression": "increasing_distress"
+    },
+    {
+      "sequence_name": "ptsd_trigger_recovery",
+      "description": "PTSD trigger followed by recovery",
+      "steps": [
+        "Calm environment",
+        "Sudden loud noise",
+        "Flashback triggered",
+        "Grounding technique applied",
+        "Gradual recovery"
+      ],
+      "expected_progression": "trigger_then_recovery"
+    }
+  ],
+  "metadata": {
+    "created_date": "2025-01-08",
+    "version": "1.0",
+    "author": "NeuroSim Engine",
+    "purpose": "Testing and validation of neural simulation responses",
+    "notes": "These scenarios are designed to test the accuracy of the NeuroSim Engine in modeling autism and PTSD responses to various stimuli."
+  }
+}

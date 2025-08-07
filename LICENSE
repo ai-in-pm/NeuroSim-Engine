@@ -1,0 +1,124 @@
+MIT License with Medical Disclaimer
+===================================
+
+NeuroSim Engine
+Copyright (c) 2025 Darrell Mesa
+
+Owner: Darrell Mesa (darrell.mesa@pm-ss.org)
+GitHub: https://github.com/ai-in-pm
+
+MEDICAL DISCLAIMER AND RESEARCH USE LICENSE
+==========================================
+
+⚠️ IMPORTANT MEDICAL DISCLAIMER ⚠️
+
+This software is for RESEARCH AND EDUCATIONAL PURPOSES ONLY.
+
+This NeuroSim Engine is a computational simulation tool designed for research, 
+educational, and technological development purposes. It is NOT a medical device, 
+diagnostic tool, or treatment system.
+
+MEDICAL AND LEGAL DISCLAIMERS:
+------------------------------
+
+1. NOT FOR MEDICAL USE: This software is not intended for medical diagnosis, 
+   treatment, cure, or prevention of any disease or medical condition.
+
+2. NOT A SUBSTITUTE FOR PROFESSIONAL CARE: This tool does not replace 
+   professional medical advice, diagnosis, or treatment from qualified 
+   healthcare providers.
+
+3. CONSULT YOUR DOCTOR: Always consult with your physician, psychiatrist, 
+   psychologist, or other qualified healthcare professional regarding any 
+   medical concerns, mental health issues, or treatment decisions.
+
+4. NO MEDICAL CLAIMS: No medical claims are made about the accuracy, 
+   effectiveness, or therapeutic value of this simulation.
+
+5. RESEARCH ONLY: This is a computational model for research purposes and 
+   should not be used to make any medical or therapeutic decisions.
+
+SPECIFIC CONDITIONS DISCLAIMER:
+------------------------------
+
+- AUTISM SPECTRUM DISORDER: If you or someone you know is on the autism 
+  spectrum, please work with qualified professionals including developmental 
+  pediatricians, autism specialists, and behavioral therapists.
+
+- PTSD AND TRAUMA: If you or someone you know is experiencing PTSD, trauma, 
+  or mental health crisis, please seek immediate professional help from 
+  qualified mental health professionals or emergency services.
+
+- COMBAT VETERANS: Veterans experiencing PTSD or other service-related 
+  conditions should contact the VA, qualified mental health professionals, 
+  or veteran support services.
+
+EMERGENCY RESOURCES:
+-------------------
+
+- Crisis Hotline: 988 (Suicide & Crisis Lifeline)
+- Veterans Crisis Line: 1-800-273-8255, Press 1
+- Emergency: 911 (US) or your local emergency number
+
+MIT LICENSE TERMS:
+==================
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+1. The above copyright notice, medical disclaimers, and this permission notice
+   shall be included in all copies or substantial portions of the Software.
+
+2. Any use of this Software for medical purposes, clinical diagnosis, or patient
+   treatment requires explicit written permission from the copyright holder and
+   appropriate regulatory approval.
+
+3. Any research or publication using this Software must include appropriate
+   disclaimers about its research-only nature and lack of medical validation.
+
+4. Users must acknowledge that this is a computational simulation and not
+   representative of actual biological or medical processes.
+
+DISCLAIMER OF WARRANTIES:
+========================
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+LIMITATION OF LIABILITY:
+=======================
+
+IN NO EVENT SHALL THE AUTHORS, COPYRIGHT HOLDERS, OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+ACKNOWLEDGMENT:
+==============
+
+By using this software, you acknowledge that you have read, understood, and 
+agree to be bound by these terms and disclaimers. You further acknowledge 
+that you will not use this software for medical purposes and will consult 
+qualified healthcare professionals for any medical concerns.
+
+This software was developed to advance research in computational neuroscience
+and assistive technology, with respect for individuals with autism, PTSD, 
+and other neurodivergent conditions. It is intended to promote understanding
+and support, never to replace professional medical care.
+
+Copyright (c) 2025 Darrell Mesa
+All rights reserved.
+
+For questions or permissions, contact: darrell.mesa@pm-ss.org
