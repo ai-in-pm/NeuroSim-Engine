@@ -6,7 +6,7 @@
 
 Taking a Large Language Model, giving it Autism to study how a LLM operates having Autism.  A high-fidelity neural simulation engine for modeling neurocognitive interactions with autism and PTSD overlays.
 
-**Owner:** Darrell Mesa (darrell.mesa@pm-ss.org)
+**Owner:** Darrell Mesa (dmesa@ai-in-pm.com)
 **GitHub:** https://github.com/ai-in-pm
 
 ## ⚠️ MEDICAL DISCLAIMER
